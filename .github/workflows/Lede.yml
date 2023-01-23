@@ -18,7 +18,7 @@ on:
       CONFIG_FILE:
         description: '请选择配置文件'
         required: true
-        default: 'x86_64'
+        default: 'k2p'
         type: choice
         options:
           - 'asus_rt-acrh17'
@@ -58,9 +58,9 @@ on:
           - 'Telegram'
           - 'pushplus'
           - 'Wechat'
-      SSH_ACTION:
+      ssh-actions:
         description: 'SSH远程配置固件'
-        required: false
+        required: true
         default: 'false'
         type: boolean
       UPLOAD_FIRMWARE:
